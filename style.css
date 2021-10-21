@@ -1,0 +1,78 @@
+* {
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --btn-text: rgb(156, 1, 1);
+  --btn-color: rgb(163, 163, 163);
+}
+header {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  height: 485px;
+  margin: 20px auto;
+  background-color: rgb(215, 216, 215);
+  border: 5px solid var(--btn-text);
+}
+#shownum {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+}
+.shownum {
+  width: 80%;
+  height: 50px;
+  text-align: right;
+  margin-right: 10px;
+}
+.clear {
+  width: 20%;
+  background-color: var(--btn-color);
+  color: var(--btn-text);
+  font-size: larger;
+  font-weight: 900;
+  margin: 5px;
+}
+.index {
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+}
+.num {
+  /* justify-content: space-around; */
+
+  width: 32%;
+  margin: 1px;
+  height: 80px;
+  background-color: var(--btn-color);
+  color: var(--btn-text);
+  font-size: larger;
+  font-weight: 900;
+  font-size: 30px;
+  transition: background-color 2s;
+}
+.operation,
+.equal {
+  width: 32%;
+  margin: 1px;
+  height: 90px;
+  background-color: var(--btn-color);
+  color: var(--btn-text);
+  font-size: larger;
+  font-weight: 900;
+  transition: background-color 1s;
+  text-align: center;
+  font-size: 30px;
+}
+.num:hover,
+.operation:hover,
+.clear:hover {
+  background-color: rgb(102, 102, 102);
+}
